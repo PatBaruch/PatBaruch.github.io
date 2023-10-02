@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn about me">
+    <meta name="author" content="Patryk B">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../style.css">
+    <title>My profile</title>
+    <script>
+        function openNav() {
+            document.getElementById("mySidebar").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidebar").style.width = "0";
+            document.getElementById("main").style.marginLeft = "0";
+        }
+    </script>
+</head>
+
+<body>
+    <div id="main">
+        <nav>
+            <!-- Top nav bar -->
+            <ul>
+                <li><button class="openbtn" onclick="openNav()">☰</button></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a class="active" href="profile.html">My Profile</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+            </ul>
+        </nav>
+        <aside id="mySidebar" class="sidebar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+            <a href="https://hz.nl/uploads/documents/1.4-Over-de-HZ/1.4.3.-Regelingen-en-documenten/OERS/2022-2023/CER-HZ-Bachelor-full-time-2022-2023-DEF-June-13.pdf"
+                target="_blank" rel="noopener noreferrer">HZ HBO-ICT Course and Examination Regulations</a>
+            <a href="https://learn.hz.nl/login/index.php" target="_blank" rel="noopener noreferrer">Learn environment</a>
+            <a href="https://teams.microsoft.com/?culture=en-us&country=us#/school/conversations/Generale?threadId=19:827654897ab746089c081f24aff1c984@thread.skype&ctx=channel"
+                target="_blank" rel="noopener noreferrer">HBO-ICT Teams</a>
+            <a href="https://github.com/Andrea-B3zz" target="_blank" rel="noopener noreferrer">Github</a>
+        </aside>
+        <header class="header-profile">
+            <h1>Hello! My name is Patryk Baruch.</h1>
+        </header>
+        <main>
+            <div class="container-profile">
+                <div class="image-profile">
+                    <img src="../images/bialystok.jpeg" alt="Image of a computer terminal">
+                </div>
+                <div class="text-profile">
+                    <h2>Something about me.</h2>
+                    <ol>
+                        <li>
+                            <strong>I am from Poland.</strong> <br>
+                            Poland boasts a compelling blend of history, culture, and natural beauty. It's an
+                            EU member with a resilient spirit and thriving cities like Warsaw and Kraków.
+                        </li>
+                        <li>
+                            <strong>My city is called Białystok.</strong> <br>
+                            Białystok, in northeastern Poland, is a lively city renowned for its historical charm, cultural diversity,
+                            and beautiful parks. It's a vibrant hub in the Podlaskie Voivodeship region.
+                        </li>
+                        <li>
+                            <strong>I am 19 years old.</strong> <br> At this age back starts hurting and general well-being gets worse
+                            and worse (jk).
+                        </li>
+                        <li>
+                            <strong>In high school, I studied extended Math, CS, and English</strong> <br>
+                            I really enjoyed my classes and I'm satisfied with my choice. Without that, I wouldn't be at the HZ.
+                        </li>
+                        <li>
+                            <strong>My hobbies are carting and working out.</strong> <br>
+                            When I was younger, I used to go carting every week. Now I don't do it so often but instead I train on
+                            a regular basis.
+                        </li>
+                        <li>
+                            <strong>
+                                The photo on the left is Branicki's Palace. It was built in the XVI century and was owned by the
+                                Wiesłowski family. This family also owned the whole city of Białystok.
+                            </strong>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>
