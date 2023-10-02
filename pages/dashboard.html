@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Dashboard">
+    <meta name="author" content="Patryk B">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../style.css">
+    <title>Dashboard</title>
+    <script>
+        function openNav() {
+            document.getElementById("mySidebar").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidebar").style.width = "0";
+            document.getElementById("main").style.marginLeft = "0";
+        }
+    </script>
+</head>
+
+<body>
+    <div id="main">
+        <nav>
+            <!-- Top nav bar -->
+            <ul>
+                <li><button class="openbtn" onclick="openNav()">☰</button></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="profile.html">My Profile</a></li>
+                <li><a class="active" href="dashboard.html">Dashboard</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+            </ul>
+        </nav>
+        <aside id="mySidebar" class="sidebar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+            <a href="https://hz.nl/uploads/documents/1.4-Over-de-HZ/1.4.3.-Regelingen-en-documenten/OERS/2022-2023/CER-HZ-Bachelor-full-time-2022-2023-DEF-June-13.pdf"
+                target="_blank" rel="noopener noreferrer">HZ HBO-ICT Course and Examination Regulations</a>
+            <a href="https://learn.hz.nl/login/index.php" target="_blank" rel="noopener noreferrer">Learn
+                environment</a>
+            <a href="https://teams.microsoft.com/?culture=en-us&country=us#/school/conversations/Generale?threadId=19:827654897ab746089c081f24aff1c984@thread.skype&ctx=channel"
+                target="_blank" rel="noopener noreferrer">HBO-ICT Teams</a>
+            <a href="https://github.com/Andrea-B3zz" target="_blank" rel="noopener noreferrer">Github</a>
+        </aside>
+        <main>
+    <div class="dashboard">
+        <div class="header">
+            <div class="cell" style="width:10%">Quartile</div>
+            <div class="cell" style="width:55%">Course</div>
+            <div class="cell" style="width:15%">Exam</div>
+            <div class="cell" style="width:10%">Grade</div>
+            <div class="cell" style="width:10%">EC</div>
+        </div>
+        <div class="row">
+            <div class="cell" style="width:10%">1</div>
+            <div class="cell" style="width:55%">Program & Career Orientation</div>
+            <div class="cell" style="width:15%">Assessment website</div>
+            <div class="cell" style="width:10%"><label for="rating">Grade:</label>
+                <select id="rating" name="rating">
+                    <option value="1">-</option>
+                    <option value="1">1</option>
+                    <option value="1.5">1.5</option>
+                    <option value="2">2</option>
+                    <option value="2.5">2.5</option>
+                    <option value="3">3</option>
+                    <option value="3.5">3.5</option>
+                    <option value="4">4</option>
+                    <option value="4.5">4.5</option>
+                    <option value="5">5</option>
+                    <option value="5.5">5.5</option>
+                    <option value="6">6</option>
+                    <option value="6.5">6.5</option>
+                    <option value="7">7</option>
+                    <option value="7.5">7.5</option>
+                    <option value="8">8</option>
+                    <option value="8.5">8.5</option>
+                    <option value="9">9</option>
+                    <option value="9.5">9.5</option>
+                    <option value="10">10</option>
+                </select></div>
+            <div class="cell" style="width:10%">2.5</div>
+        </div>
+        <div class="row">
+            <div class="cell" style="width:10%">1</div>
+            <div class="cell" style="width:55%">Computer Science Basics</div>
+            <div class="cell" style="width:15%">Written knowledge test</div>
+            <div class="cell" style="width:10%"><label for="rating">Grade:</label>
+                <select id="rating" name="rating">
+                    <option value="1">-</option>
+                    <option value="1">1</option>
+                    <option value="1.5">1.5</option>
+                    <option value="2">2</option>
+                    <option value="2.5">2.5</option>
+                    <option value="3">3</option>
+                    <option value="3.5">3.5</option>
+                    <option value="4">4</option>
+                    <option value="4.5">4.5</option>
+                    <option value="5">5</option>
+                    <option value="5.5">5.5</option>
+                    <option value="6">6</option>
+                    <option value="6.5">6.5</option>
+                    <option value="7">7</option>
+                    <option value="7.5">7.5</option>
+                    <option value="8">8</option>
+                    <option value="8.5">8.5</option>
+                    <option value="9">9</option>
+                    <option value="9.5">9.5</option>
+                    <option value="10">10</option>
+                </select></div>
+            <div class="cell" style="width:10%">5</div>
+        </div>
+        <div class="row">
+            <div class="cell" style="width:10%">1</div>
+            <div class="cell" style="width:55%">Programming Basics</div>
+            <div class="cell" style="width:15%">Case study exam</div>
+            <div class="cell" style="width:10%"><label for="rating">Grade:</label>
+                <select id="rating" name="rating">
+                    <option value="1">-</option>
+                    <option value="1">1</option>
+                    <option value="1.5">1.5</option>
+                    <option value="2">2</option>
+                    <option value="2.5">2.5</option>
+                    <option value="3">3</option>
+                    <option value="3.5">3.5</option>
+                    <option value="4">4</option>
+                    <option value="4.5">4.5</option>
+                    <option value="5">5</option>
+                    <option value="5.5">5.5</option>
+                    <option value="6">6</option>
+                    <option value="6.5">6.5</option>
+                    <option value="7">7</option>
+                    <option value="7.5">7.5</option>
+                    <option value="8">8</option>
+                    <option value="8.5">8.5</option>
+                    <option value="9">9</option>
+                    <option value="9.5">9.5</option>
+                    <option value="10">10</option>
+                </select></div>
+            <div class="cell" style="width:10%">5</div>
+        </div>
+        <div class="row">
+            <div class="cell" style="width:10%">2</div>
+            <div class="cell" style="width:55%">Object Oriented Programming</div>
+            <div class="cell" style="width:15%">Presentation / Case study exam</div>
+            <div class="cell" style="width:10%"><label for="rating">Grade:</label>
+                <select id="rating" name="rating">
+                    <option value="1">-</option>
+                    <option value="1">1</option>
+                    <option value="1.5">1.5</option>
+                    <option value="2">2</option>
+                    <option value="2.5">2.5</option>
+                    <option value="3">3</option>
+                    <option value="3.5">3.5</option>
+                    <option value="4">4</option>
+                    <option value="4.5">4.5</option>
+                    <option value="5">5</option>
+                    <option value="5.5">5.5</option>
+                    <option value="6">6</option>
+                    <option value="6.5">6.5</option>
+                    <option value="7">7</option>
+                    <option value="7.5">7.5</option>
+                    <option value="8">8</option>
+                    <option value="8.5">8.5</option>
+                    <option value="9">9</option>
+                    <option value="9.5">9.5</option>
+                    <option value="10">10</option>
+                </select></div>
+            <div class="cell" style="width:10%">10</div>
+        </div>
+        <div class="row">
+            <div class="cell" style="width:10%">3</div>
+            <div class="cell" style="width:55%">Framework Development 1</div>
+            <div class="cell" style="width:15%">Case study exam</div>
+            <div class="cell" style="width:10%"><label for="rating">Grade:</label>
+                <select id="rating" name="rating">
+                    <option value="1">-</option>
+                    <option value="1">1</option>
+                    <option value="1.5">1.5</option>
+                    <option value="2">2</option>
+                    <option value="2.5">2.5</option>
+                    <option value="3">3</option>
+                    <option value="3.5">3.5</option>
+                    <option value="4">4</option>
+                    <option value="4.5">4.5</option>
+                    <option value="5">5</option>
+                    <option value="5.5">5.5</option>
+                    <option value="6">6</option>
+                    <option value="6.5">6.5</option>
+                    <option value="7">7</option>
+                    <option value="7.5">7.5</option>
+                    <option value="8">8</option>
+                    <option value="8.5">8.5</option>
+                    <option value="9">9</option>
+                    <option value="9.5">9.5</option>
+                    <option value="10">10</option>
+                </select></div>
+            <div class="cell" style="width:10%">5</div>
+        </div>
+        <div class="row">
+            <div class="cell" style="width:10%">3</div>
+            <div class="cell" style="width:55%">Framework Project 1</div>
+            <div class="cell" style="width:15%">Criterion-based interview / assignment / Case study exam</div>
+            <div class="cell" style="width:10%"><label for="rating">Grade:</label>
+                <select id="rating" name="rating">
+                    <option value="1">-</option>
+                    <option value="1">1</option>
+                    <option value="1.5">1.5</option>
+                    <option value="2">2</option>
+                    <option value="2.5">2.5</option>
+                    <option value="3">3</option>
+                    <option value="3.5">3.5</option>
+                    <option value="4">4</option>
+                    <option value="4.5">4.5</option>
+                    <option value="5">5</option>
+                    <option value="5.5">5.5</option>
+                    <option value="6">6</option>
+                    <option value="6.5">6.5</option>
+                    <option value="7">7</option>
+                    <option value="7.5">7.5</option>
+                    <option value="8">8</option>
+                    <option value="8.5">8.5</option>
+                    <option value="9">9</option>
+                    <option value="9.5">9.5</option>
+                    <option value="10">10</option>
+                </select></div>
+            <div class="cell" style="width:10%">7.5</div>
+        </div>
+        <div class="row">
+            <div class="cell" style="width:10%">4</div>
+            <div class="cell" style="width:55%">Framework Project 2</div>
+            <div class="cell" style="width:15%">Assessment website</div>
+            <div class="cell" style="width:10%"><label for="rating">Grade:</label>
+                <select id="rating" name="rating">
+                    <option value="1">-</option>
+                    <option value="1">1</option>
+                    <option value="1.5">1.5</option>
+                    <option value="2">2</option>
+                    <option value="2.5">2.5</option>
+                    <option value="3">3</option>
+                    <option value="3.5">3.5</option>
+                    <option value="4">4</option>
+                    <option value="4.5">4.5</option>
+                    <option value="5">5</option>
+                    <option value="5.5">5.5</option>
+                    <option value="6">6</option>
+                    <option value="6.5">6.5</option>
+                    <option value="7">7</option>
+                    <option value="7.5">7.5</option>
+                    <option value="8">8</option>
+                    <option value="8.5">8.5</option>
+                    <option value="9">9</option>
+                    <option value="9.5">9.5</option>
+                    <option value="10">10</option>
+                </select></div>
+            <div class="cell" style="width:10%">10</div>
+        </div>
+        <div class="row">
+            <div class="cell" style="width:10%">All</div>
+            <div class="cell" style="width:55%">Personal Professional Development</div>
+            <div class="cell" style="width:15%">Final delivery / Report of acceptance test and optional assessments / IT Development portfolio</div>
+            <div class="cell" style="width:10%"><label for="rating">Grade:</label>
+                <select id="rating" name="rating">
+                    <option value="1">-</option>
+                    <option value="1">1</option>
+                    <option value="1.5">1.5</option>
+                    <option value="2">2</option>
+                    <option value="2.5">2.5</option>
+                    <option value="3">3</option>
+                    <option value="3.5">3.5</option>
+                    <option value="4">4</option>
+                    <option value="4.5">4.5</option>
+                    <option value="5">5</option>
+                    <option value="5.5">5.5</option>
+                    <option value="6">6</option>
+                    <option value="6.5">6.5</option>
+                    <option value="7">7</option>
+                    <option value="7.5">7.5</option>
+                    <option value="8">8</option>
+                    <option value="8.5">8.5</option>
+                    <option value="9">9</option>
+                    <option value="9.5">9.5</option>
+                    <option value="10">10</option>
+                </select></div>
+            <div class="cell" style="width:10%">12.5</div>
+        </div>
+        <div class="row">
+            <div class="cell" style="width:10%">All</div>
+            <div class="cell" style="width:55%">IT Personality 1</div>
+            <div class="cell" style="width:15%">Portfolio</div>
+            <div class="cell" style="width:10%"><label for="rating">Grade:</label>
+                <select id="rating" name="rating">
+                    <option value="1">-</option>
+                    <option value="1">1</option>
+                    <option value="1.5">1.5</option>
+                    <option value="2">2</option>
+                    <option value="2.5">2.5</option>
+                    <option value="3">3</option>
+                    <option value="3.5">3.5</option>
+                    <option value="4">4</option>
+                    <option value="4.5">4.5</option>
+                    <option value="5">5</option>
+                    <option value="5.5">5.5</option>
+                    <option value="6">6</option>
+                    <option value="6.5">6.5</option>
+                    <option value="7">7</option>
+                    <option value="7.5">7.5</option>
+                    <option value="8">8</option>
+                    <option value="8.5">8.5</option>
+                    <option value="9">9</option>
+                    <option value="9.5">9.5</option>
+                    <option value="10">10</option>
+                </select></div>
+            <div class="cell" style="width:10%">1.25</div>
+        </div>
+        <div class="row">
+            <div class="cell" style="width:10%">All</div>
+            <div class="cell" style="width:55%">IT Personality 2</div>
+            <div class="cell" style="width:15%">Portfolio</div>
+            <div class="cell" style="width:10%"><label for="rating">Grade:</label>
+                <select id="rating" name="rating">
+                    <option value="1">-</option>
+                    <option value="1">1</option>
+                    <option value="1.5">1.5</option>
+                    <option value="2">2</option>
+                    <option value="2.5">2.5</option>
+                    <option value="3">3</option>
+                    <option value="3.5">3.5</option>
+                    <option value="4">4</option>
+                    <option value="4.5">4.5</option>
+                    <option value="5">5</option>
+                    <option value="5.5">5.5</option>
+                    <option value="6">6</option>
+                    <option value="6.5">6.5</option>
+                    <option value="7">7</option>
+                    <option value="7.5">7.5</option>
+                    <option value="8">8</option>
+                    <option value="8.5">8.5</option>
+                    <option value="9">9</option>
+                    <option value="9.5">9.5</option>
+                    <option value="10">10</option>
+                </select>
+                </div>
+            <div class="cell" style="width:10%">1.25</div>
+        </div>
+    </div>
+    <div class="boundary-label">NBSA boundary</div>
+<div class="progress-bar-container">
+  <div class="progress-bar">45/60</div>
+</div>
+</body>
+</html>
+
+

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Blog about my ICT journey.">
+    <meta name="keywords" content="Blog, ICT">
+    <meta name="author" content="Patryk B">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../style.css">
+    <title>Blog</title>
+    <script>
+        function openNav() {
+            document.getElementById("mySidebar").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidebar").style.width = "0";
+            document.getElementById("main").style.marginLeft = "0";
+        }
+    </script>
+</head>
+
+<body>
+    <div id="main">
+        <nav>
+            <!-- Top nav bar -->
+            <ul>
+                <li><button class="openbtn" onclick="openNav()">☰</button></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="profile.html">My Profile</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a class="active" href="blog.html">Blog</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+            </ul>
+        </nav>
+        <aside id="mySidebar" class="sidebar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+            <a href="https://hz.nl/uploads/documents/1.4-Over-de-HZ/1.4.3.-Regelingen-en-documenten/OERS/2022-2023/CER-HZ-Bachelor-full-time-2022-2023-DEF-June-13.pdf"
+                target="_blank" rel="noopener noreferrer">HZ HBO-ICT Course and Examination Regulations</a>
+            <a href="https://learn.hz.nl/login/index.php" target="_blank" rel="noopener noreferrer">Learn
+                environment</a>
+            <a href="https://teams.microsoft.com/?culture=en-us&country=us#/school/conversations/Generale?threadId=19:827654897ab746089c081f24aff1c984@thread.skype&ctx=channel"
+                target="_blank" rel="noopener noreferrer">HBO-ICT Teams</a>
+            <a href="https://github.com/Andrea-B3zz" target="_blank" rel="noopener noreferrer">Github</a>
+        </aside>
+        <main class="blog-main">
+            <div class="container">
+                <div class="article-box">
+                    <h2 class="article-title">Study Choice</h2>
+                    <a href="../blog-pages/blog-study-choice.html" class="article-link">Read more...</a>
+                </div>
+
+                <div class="article-box">
+                    <h2 class="article-title">Personal SWOT Analysis</h2>
+                    <a href="../blog-pages/blog-swot.html" class="article-link">Read more...</a>
+                </div>
+
+                <div class="article-box">
+                    <h2 class="article-title">Programming Experience</h2>
+                    <a href="../blog-pages/blog-programming.html" class="article-link">Read more...</a>
+                </div>
+                <div class="article-box">
+                    <h2 class="article-title">First Feedback</h2>
+                    <a href="../blog-pages/blog-first-feedback.html" class="article-link">Read more...</a>
+                </div>
+
+                <div class="article-box">
+                    <h2 class="article-title">Exploring the ICT Field</h2>
+                    <a href="https://aws.amazon.com/mobile/mobile-application-development/" class="article-link">Read more...</a>
+                </div>
+            </div>
+</body>
+
+</html>
