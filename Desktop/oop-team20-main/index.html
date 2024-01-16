@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Virus Vanguard</title>
+        <style>
+            html, body {
+                margin: 0;
+                background-size: cover;
+                background-position-x: right;
+                background-position-y: center;
+            }
+            body.level0 {
+                background-image: url('./assets/bg.png');
+            }
+            body.level1 {
+                background-image: url('./assets/player.png');
+            }
+            canvas {
+                display: block;
+                margin: auto;
+            }
+        </style>
+    </head>
+    <body>
+        <canvas id="game"></canvas>
+        <script src="build/app.js" type="module"></script>
+    </body>
+</html>
