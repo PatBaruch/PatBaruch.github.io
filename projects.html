@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Your Name</title>
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0A192F',
+                        secondary: '#112240',
+                        accent: '#64FFDA',
+                        'text-primary': '#CCD6F6',
+                        'text-secondary': '#8892B0',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        heading: ['Montserrat', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body class="bg-primary text-text-primary font-sans">
+    <!-- Header (same as index.html) -->
+    <header class="fixed w-full bg-primary bg-opacity-90 backdrop-blur-md z-50">
+        <nav class="flex items-center justify-between max-w-7xl mx-auto px-6 py-6">
+            <div class="text-2xl font-bold font-heading">
+                <a href="index.html" class="text-white">YourName<span class="text-accent">.</span></a>
+            </div>
+            <ul class="hidden md:flex space-x-8">
+                <li><a href="index.html" class="text-text-primary hover:text-accent relative after:absolute after:w-0 after:h-0.5 after:bg-accent after:bottom-0 after:left-0 hover:after:w-full after:transition-all">Home</a></li>
+                <li><a href="about.html" class="text-text-primary hover:text-accent relative after:absolute after:w-0 after:h-0.5 after:bg-accent after:bottom-0 after:left-0 hover:after:w-full after:transition-all">About</a></li>
+                <li><a href="projects.html" class="text-accent relative after:absolute after:w-full after:h-0.5 after:bg-accent after:bottom-0 after:left-0 after:transition-all">Projects</a></li>
+                <li><a href="skills.html" class="text-text-primary hover:text-accent relative after:absolute after:w-0 after:h-0.5 after:bg-accent after:bottom-0 after:left-0 hover:after:w-full after:transition-all">Skills</a></li>
+                <li><a href="contact.html" class="text-text-primary hover:text-accent relative after:absolute after:w-0 after:h-0.5 after:bg-accent after:bottom-0 after:left-0 hover:after:w-full after:transition-all">Contact</a></li>
+            </ul>
+            <div class="md:hidden flex items-center">
+                <button id="menu-toggle" class="text-text-primary focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="md:hidden hidden bg-secondary py-4 px-6">
+            <ul class="flex flex-col space-y-4">
+                <li><a href="index.html" class="text-text-primary hover:text-accent block py-2">Home</a></li>
+                <li><a href="about.html" class="text-text-primary hover:text-accent block py-2">About</a></li>
+                <li><a href="projects.html" class="text-accent block py-2">Projects</a></li>
+                <li><a href="skills.html" class="text-text-primary hover:text-accent block py-2">Skills</a></li>
+                <li><a href="contact.html" class="text-text-primary hover:text-accent block py-2">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main class="pt-28">
+        <!-- Page Header -->
+        <section class="text-center py-16 px-6">
+            <h1 class="text-4xl md:text-5xl font-bold font-heading mb-4">My Projects</h1>
+            <p class="text-text-secondary text-lg max-w-2xl mx-auto">A showcase of my work, skills, and passion for technology.</p>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="max-w-7xl mx-auto px-6 pb-20">
+            <!-- Filter Buttons -->
+            <div class="flex flex-wrap justify-center gap-4 mb-12">
+                <button class="filter-btn active text-text-primary hover:text-accent focus:text-accent px-4 py-2 relative after:absolute after:w-0 after:h-0.5 after:bg-accent after:bottom-0 after:left-1/2 after:-translate-x-1/2 hover:after:w-3/4 active:after:w-3/4 after:transition-all" data-filter="all">All</button>
+                <button class="filter-btn text-text-primary hover:text-accent focus:text-accent px-4 py-2 relative after:absolute after:w-0 after:h-0.5 after:bg-accent after:bottom-0 after:left-1/2 after:-translate-x-1/2 hover:after:w-3/4 active:after:w-3/4 after:transition-all" data-filter="web">Web</button>
+                <button class="filter-btn text-text-primary hover:text-accent focus:text-accent px-4 py-2 relative after:absolute after:w-0 after:h-0.5 after:bg-accent after:bottom-0 after:left-1/2 after:-translate-x-1/2 hover:after:w-3/4 active:after:w-3/4 after:transition-all" data-filter="mobile">Mobile</button>
+                <button class="filter-btn text-text-primary hover:text-accent focus:text-accent px-4 py-2 relative after:absolute after:w-0 after:h-0.5 after:bg-accent after:bottom-0 after:left-1/2 after:-translate-x-1/2 hover:after:w-3/4 active:after:w-3/4 after:transition-all" data-filter="data">Data</button>
+                <button class="filter-btn text-text-primary hover:text-accent focus:text-accent px-4 py-2 relative after:absolute after:w-0 after:h-0.5 after:bg-accent after:bottom-0 after:left-1/2 after:-translate-x-1/2 hover:after:w-3/4 active:after:w-3/4 after:transition-all" data-filter="ai">AI</button>
+            </div>
+
+            <!-- Projects Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project 1 -->
+                <div class="project-card bg-secondary rounded-lg overflow-hidden shadow-lg transition-transform hover:-translate-y-2" data-category="web">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://via.placeholder.com/600x400" alt="E-commerce Website" class="w-full h-full object-cover transition-transform hover:scale-105">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">E-commerce Website</h3>
+                        <p class="text-text-secondary mb-4">A full-featured online store with shopping cart, payment integration, and admin dashboard.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-accent/10 text-accent text-xs px-2 py-1 rounded">HTML</span>
+                            <span class="bg-accent/10 text-accent text-xs px-2 py-1 rounded">CSS</span>
+                            <span class="bg-accent/10 text-accent text-xs px-2 py-1 rounded">JavaScript</span>
+                            <span class="bg-accent/10 text-accent text-xs px-2 py-1 rounded">PHP</span>
+                        </div>
+                        <div class="flex gap-4">
+                            <a href="#" class="text-accent text-sm border border-accent px-4 py-2 rounded hover:bg-accent/10 transition-colors" target="_blank">View Project</a>
+                            <a href="#" class="text-accent text-sm border border-accent px-4 py-2 rounded hover:bg-accent/10 transition-colors" target="_blank">View Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card bg-secondary rounded-lg overflow-hidden shadow-lg transition-transform hover:-translate-y-2" data-category="mobile">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://via.placeholder.com/600x400" alt="Fitness Tracking App" class="w-full h-full object-cover transition-transform hover:scale-105">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Fitness Tracking App</h3>
+                        <p class="text-text-secondary mb-4">A mobile application to track workouts, set goals, and monitor progress over time.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-accent/10 text-accent text-xs px-2 py-1 rounded">React Native</span>
+                            <span class="bg-accent/10 text-accent text-xs px-2 py-1 rounded">Firebase</span>
+                            <span class="bg-accent/10 text-accent text-xs px-2 py-1 rounded">Redux</span>
+                        </div>
+                        <div class="flex gap-4">
+                            <a href="#" class="text-accent text-sm border border-accent px-4 py-2 rounded hover:bg-accent/10 transition-colors" target="_blank">View Project</a>
+                            <a href="#" class="text-accent text-sm border border-accent px-4 py-2 rounded hover:bg-accent/10 transition-colors" target="_blank">View Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- More projects... (similar to the ones above) -->
+                <!-- Add 4 more projects with different data-category values -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer (same as index.html) -->
+    <footer class="bg-secondary py-12 px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex flex-col md:flex-row justify-between items-center mb-8">
+                <div class="text-center md:text-left mb-6 md:mb-0">
+                    <h3 class="text-2xl font-bold font-heading mb-2">Your Name</h3>
+                    <p class="text-text-secondary">ICT Student & Developer</p>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="#" target="_blank" class="text-text-primary text-2xl hover:text-accent transition-colors"><i class="fab fa-github"></i></a>
+                    <a href="#" target="_blank" class="text-text-primary text-2xl hover:text-accent transition-colors"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" target="_blank" class="text-text-primary text-2xl hover:text-accent transition-colors"><i class="fab fa-twitter"></i></a>
+                    <a href="mailto:your.email@example.com" class="text-text-primary text-2xl hover:text-accent transition-colors"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+            <div class="border-t border-text-primary/10 pt-6 text-center">
+                <p class="text-text-secondary text-sm">&copy; 2023 Your Name. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

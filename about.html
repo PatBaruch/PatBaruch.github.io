@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | Your Name</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body class="bg-primary text-text-primary font-sans">
+    <!-- Header (Same as index.html) -->
+    <header class="fixed w-full bg-primary bg-opacity-90 backdrop-blur-md z-50">
+        <!-- ... Your existing nav code ... -->
+    </header>
+
+    <main class="pt-28">
+        <!-- About Hero Section -->
+        <section class="max-w-7xl mx-auto px-6 py-16">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="order-2 md:order-1">
+                    <div class="hero-content">
+                        <h1 class="text-4xl md:text-5xl font-bold font-heading mb-2">Hi, I'm <span class="text-accent">Patryk Baruch</span></h1>
+                        <h2 class="text-xl md:text-2xl font-heading text-text-secondary mb-6">I'm a <span id="typing-text" class="text-accent"></span></h2>
+                        <p class="text-text-secondary text-lg mb-8 max-w-lg mx-auto md:mx-0">
+                            An aspiring Software Developer with a passion for AI, web applications, and game development. Currently pursuing HBO ICT at HZ University of Applied Sciences.
+                        </p>
+                    </div>
+                    <div class="flex gap-4">
+                        <a href="contact.html" class="bg-accent text-primary px-6 py-3 rounded font-medium hover:bg-transparent hover:text-accent border border-accent transition-all">Contact Me</a>
+                        <a href="assets/resume.pdf" class="bg-transparent text-accent px-6 py-3 rounded font-medium border border-accent hover:bg-accent/10 transition-all" download>Download CV</a>
+                    </div>
+                </div>
+                <div class="order-1 md:order-2">
+                    <img src="assets/images/profile.jpg" alt="Your Name" class="rounded-lg shadow-xl w-full max-w-md mx-auto">
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="max-w-7xl mx-auto px-6 py-16">
+            <div class="space-y-8">
+                <div class="bg-secondary p-8 rounded-lg">
+                    <h2 class="text-2xl font-bold mb-4">About Me</h2>
+                    <p class="text-text-secondary mb-4">
+                        I'm a first-year student at HZ University of Applied Sciences, passionate about creating innovative solutions through technology. While I'm developing skills across the full stack, I have a particular interest in frontend development and emerging AI technologies.
+                    </p>
+                    <p class="text-text-secondary">
+                        Beyond coding, I'm fascinated by household automation and enjoy creating solutions that combine hardware and software, including working with printed circuit boards to solve everyday problems.
+                    </p>
+                </div>
+
+                <div class="bg-secondary p-8 rounded-lg">
+                    <h2 class="text-2xl font-bold mb-4">Education</h2>
+                    <div class="mb-4">
+                        <h3 class="text-xl font-bold text-accent">HBO ICT</h3>
+                        <p class="text-text-secondary">HZ University of Applied Sciences</p>
+                        <p class="text-text-secondary">September 2023 - July 2027 (Expected)</p>
+                        <p class="text-accent mt-2 italic">Note: Coursework details to be updated</p>
+                    </div>
+                </div>
+
+                <div class="bg-secondary p-8 rounded-lg">
+                    <h2 class="text-2xl font-bold mb-4">Languages</h2>
+                    <div class="space-y-2">
+                        <div class="flex justify-between items-center">
+                            <span>Polish</span>
+                            <span class="text-accent">Native</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span>English</span>
+                            <span class="text-accent">C1 (TOEFL Certified)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Overview -->
+        <section class="py-16">
+            <div class="max-w-7xl mx-auto px-6">
+                <h2 class="text-3xl font-bold font-heading mb-12 text-center">Technical Skills</h2>
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                    <!-- Programming Languages -->
+                    <div class="bg-secondary p-6 rounded-lg">
+                        <h3 class="text-xl font-bold mb-4">Languages</h3>
+                        <div class="space-y-2">
+                            <div class="flex items-center gap-2">
+                                <i class="fab fa-js text-accent"></i>
+                                <span>JavaScript</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <i class="fab fa-js text-accent"></i>
+                                <span>TypeScript</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <i class="fab fa-php text-accent"></i>
+                                <span>PHP</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <i class="fab fa-java text-accent"></i>
+                                <span>Java</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Web Technologies -->
+                    <div class="bg-secondary p-6 rounded-lg">
+                        <h3 class="text-xl font-bold mb-4">Web Technologies</h3>
+                        <div class="space-y-2">
+                            <div class="flex items-center gap-2">
+                                <i class="fab fa-html5 text-accent"></i>
+                                <span>HTML5</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <i class="fab fa-css3-alt text-accent"></i>
+                                <span>CSS3</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <i class="fab fa-laravel text-accent"></i>
+                                <span>Laravel</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Database & API -->
+                    <div class="bg-secondary p-6 rounded-lg">
+                        <h3 class="text-xl font-bold mb-4">Database & API</h3>
+                        <div class="space-y-2">
+                            <div class="flex items-center gap-2">
+                                <i class="fas fa-database text-accent"></i>
+                                <span>SQL</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <i class="fas fa-code text-accent"></i>
+                                <span>JSON</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <i class="fas fa-network-wired text-accent"></i>
+                                <span>API Integration</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Add more skill items -->
+                </div>
+            </div>
+        </section>
+
+        <section class="py-16">
+            <div class="max-w-7xl mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center mb-12">Let's Connect</h2>
+                <div class="flex justify-center space-x-6">
+                    <a href="https://github.com/PatBaruch/" target="_blank" class="text-text-primary hover:text-accent transition-colors">
+                        <i class="fab fa-github text-3xl"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/patryk-baruch" target="_blank" class="text-text-primary hover:text-accent transition-colors">
+                        <i class="fab fa-linkedin text-3xl"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer (Same as index.html) -->
+    <footer class="bg-secondary py-12 px-6">
+        <!-- ... Your existing footer code ... -->
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

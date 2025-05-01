@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patryk Baruch | ICT Portfolio</title>
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0A192F',
+                        secondary: '#112240',
+                        accent: '#64FFDA',
+                        'text-primary': '#CCD6F6',
+                        'text-secondary': '#8892B0',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        heading: ['Montserrat', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body class="bg-primary text-text-primary font-sans">
+    <!-- Header -->
+    <header class="fixed w-full bg-primary bg-opacity-90 backdrop-blur-md z-50">
+        <nav class="flex items-center justify-between max-w-7xl mx-auto px-6 py-6">
+            <div class="text-2xl font-bold font-heading">
+                <a href="index.html" class="text-white">PatrykBaruch<span class="text-accent">.</span></a>
+            </div>
+            <ul class="hidden md:flex space-x-8">
+                <li><a href="index.html" class="text-text-primary hover:text-accent relative after:absolute after:w-0 after:h-0.5 after:bg-accent after:bottom-0 after:left-0 hover:after:w-full after:transition-all">Home</a></li>
+                <li><a href="about.html" class="text-text-primary hover:text-accent relative after:absolute after:w-0 after:h-0.5 after:bg-accent after:bottom-0 after:left-0 hover:after:w-full after:transition-all">About</a></li>
+                <li><a href="projects.html" class="text-text-primary hover:text-accent relative after:absolute after:w-0 after:h-0.5 after:bg-accent after:bottom-0 after:left-0 hover:after:w-full after:transition-all">Projects</a></li>
+                <li><a href="skills.html" class="text-text-primary hover:text-accent relative after:absolute after:w-0 after:h-0.5 after:bg-accent after:bottom-0 after:left-0 hover:after:w-full after:transition-all">Skills</a></li>
+                <li><a href="contact.html" class="text-text-primary hover:text-accent relative after:absolute after:w-0 after:h-0.5 after:bg-accent after:bottom-0 after:left-0 hover:after:w-full after:transition-all">Contact</a></li>
+            </ul>
+            <div class="md:hidden flex items-center">
+                <button id="menu-toggle" class="text-text-primary focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="md:hidden hidden bg-secondary py-4 px-6">
+            <ul class="flex flex-col space-y-4">
+                <li><a href="index.html" class="text-text-primary hover:text-accent block py-2">Home</a></li>
+                <li><a href="about.html" class="text-text-primary hover:text-accent block py-2">About</a></li>
+                <li><a href="projects.html" class="text-text-primary hover:text-accent block py-2">Projects</a></li>
+                <li><a href="skills.html" class="text-text-primary hover:text-accent block py-2">Skills</a></li>
+                <li><a href="contact.html" class="text-text-primary hover:text-accent block py-2">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="min-h-screen flex flex-col md:flex-row items-center justify-center max-w-7xl mx-auto px-6 pt-28 md:pt-32">
+            <div class="w-full md:w-1/2 text-center md:text-left mb-12 md:mb-0">
+                <h1 class="text-4xl md:text-5xl font-bold font-heading mb-2">Hi, I'm <span class="text-accent">Patryk Baruch</span></h1>
+                <h2 class="text-xl md:text-2xl font-heading text-text-secondary mb-6">I'm a HBO ICT student at HZ University <span id="typing-text" class="text-accent"></span></h2>
+                <p class="text-text-secondary text-lg mb-8 max-w-lg mx-auto md:mx-0">
+                    passionate about web development, AI, and creating innovative solutions. I combine creativity with technical expertise to build impactful applications.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+                    <a href="projects.html" class="bg-accent text-primary px-6 py-3 rounded font-medium hover:bg-transparent hover:text-accent border border-accent transition-all">View My Work</a>
+                    <a href="assets/resume/resume.pdf" download class="bg-transparent text-accent px-6 py-3 rounded font-medium border border-accent hover:bg-accent/10 transition-all">Download Resume</a>
+                </div>
+            </div>
+            <div class="w-full md:w-1/2 flex justify-center">
+                <div class="w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-accent">
+                    <img src="assets/images/profile.jpg" alt="Patryk Baruch" class="w-full h-full object-cover">
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Projects Section -->
+        <section class="py-20 px-6 max-w-7xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold font-heading text-center mb-16 relative after:absolute after:w-16 after:h-1 after:bg-accent after:bottom-0 after:-mb-4 after:left-1/2 after:-translate-x-1/2">Featured Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project Card 1 -->
+                <div class="bg-secondary rounded-lg overflow-hidden shadow-lg transition-transform hover:-translate-y-2">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://via.placeholder.com/600x400" alt="Project 1" class="w-full h-full object-cover transition-transform hover:scale-105">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Project Title 1</h3>
+                        <p class="text-text-secondary mb-4">Short description of your project. What technologies you used and what problem it solves.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-accent/10 text-accent text-xs px-2 py-1 rounded">HTML</span>
+                            <span class="bg-accent/10 text-accent text-xs px-2 py-1 rounded">CSS</span>
+                            <span class="bg-accent/10 text-accent text-xs px-2 py-1 rounded">JavaScript</span>
+                        </div>
+                        <div class="flex gap-4">
+                            <a href="#" class="text-accent text-sm border border-accent px-4 py-2 rounded hover:bg-accent/10 transition-colors" target="_blank">View Project</a>
+                            <a href="#" class="text-accent text-sm border border-accent px-4 py-2 rounded hover:bg-accent/10 transition-colors" target="_blank">View Code</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project Card 2 -->
+                <div class="bg-secondary rounded-lg overflow-hidden shadow-lg transition-transform hover:-translate-y-2">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://via.placeholder.com/600x400" alt="Project 2" class="w-full h-full object-cover transition-transform hover:scale-105">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Project Title 2</h3>
+                        <p class="text-text-secondary mb-4">Short description of your project. What technologies you used and what problem it solves.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-accent/10 text-accent text-xs px-2 py-1 rounded">React</span>
+                            <span class="bg-accent/10 text-accent text-xs px-2 py-1 rounded">Node.js</span>
+                            <span class="bg-accent/10 text-accent text-xs px-2 py-1 rounded">MongoDB</span>
+                        </div>
+                        <div class="flex gap-4">
+                            <a href="#" class="text-accent text-sm border border-accent px-4 py-2 rounded hover:bg-accent/10 transition-colors" target="_blank">View Project</a>
+                            <a href="#" class="text-accent text-sm border border-accent px-4 py-2 rounded hover:bg-accent/10 transition-colors" target="_blank">View Code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-12">
+                <a href="projects.html" class="bg-accent text-primary px-6 py-3 rounded font-medium hover:bg-transparent hover:text-accent border border-accent transition-all">View All Projects</a>
+            </div>
+        </section>
+
+        <!-- Skills Preview Section -->
+        <section class="py-20 px-6 max-w-7xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold font-heading text-center mb-16 relative after:absolute after:w-16 after:h-1 after:bg-accent after:bottom-0 after:-mb-4 after:left-1/2 after:-translate-x-1/2">My Skills</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Frontend Skills -->
+                <div class="bg-secondary p-8 rounded-lg shadow-lg">
+                    <h3 class="text-2xl font-bold mb-6 pb-2 border-b border-accent inline-block">Frontend</h3>
+                    
+                    <div class="mb-6">
+                        <div class="flex justify-between mb-2">
+                            <span>HTML/CSS</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="w-full h-2 bg-primary/50 rounded-full overflow-hidden">
+                            <div class="skill-progress h-full bg-accent" style="width: 80%"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="mb-6">
+                        <div class="flex justify-between mb-2">
+                            <span>JavaScript</span>
+                            <span>70%</span>
+                        </div>
+                        <div class="w-full h-2 bg-primary/50 rounded-full overflow-hidden">
+                            <div class="skill-progress h-full bg-accent" style="width: 70%"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Backend Skills -->
+                <div class="bg-secondary p-8 rounded-lg shadow-lg">
+                    <h3 class="text-2xl font-bold mb-6 pb-2 border-b border-accent inline-block">Backend</h3>
+                    
+                    <div class="mb-6">
+                        <div class="flex justify-between mb-2">
+                            <span>Python</span>
+                            <span>60%</span>
+                        </div>
+                        <div class="w-full h-2 bg-primary/50 rounded-full overflow-hidden">
+                            <div class="skill-progress h-full bg-accent" style="width: 60%"></div>
+                        </div>
+                    </div>
+                    <div class="mb-6">
+                        <div class="flex justify-between mb-2">
+                            <span>Node.js</span>
+                            <span>60%</span>
+                        </div>
+                        <div class="w-full h-2 bg-primary/50 rounded-full overflow-hidden">
+                            <div class="skill-progress h-full bg-accent" style="width: 55%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-12">
+                <a href="skills.html" class="bg-accent text-primary px-6 py-3 rounded font-medium hover:bg-transparent hover:text-accent border border-accent transition-all">View All Skills</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-secondary py-12 px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex flex-col md:flex-row justify-between items-center mb-8">
+                <div class="text-center md:text-left mb-6 md:mb-0">
+                    <h3 class="text-2xl font-bold font-heading mb-2">Your Name</h3>
+                    <p class="text-text-secondary">ICT Student & Developer</p>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="#" target="_blank" class="text-text-primary text-2xl hover:text-accent transition-colors"><i class="fab fa-github"></i></a>
+                    <a href="#" target="_blank" class="text-text-primary text-2xl hover:text-accent transition-colors"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" target="_blank" class="text-text-primary text-2xl hover:text-accent transition-colors"><i class="fab fa-twitter"></i></a>
+                    <a href="mailto:your.email@example.com" class="text-text-primary text-2xl hover:text-accent transition-colors"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+            <div class="border-t border-text-primary/10 pt-6 text-center">
+                <p class="text-text-secondary text-sm">&copy; 2023 Your Name. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Update typing text options
+        const typingOptions = {
+            strings: ['Software Developer', 'Frontend Developer', 'ICT Student', 'Problem Solver'],
+            typeSpeed: 50,
+            backSpeed: 30,
+            backDelay: 1500,
+            loop: true
+        };
+    </script>
+</body>
+</html>
