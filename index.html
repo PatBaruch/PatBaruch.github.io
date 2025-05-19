@@ -205,7 +205,7 @@
               <a
                 href="https://github.com/PatBaruch/"
                 class="w-link c1b44psv cl8m66n cihfpxt cb4vmi8 c1j33arz c1r2vfc1 ccfzz03 cub2gss cgcvr98 c1xjllne c135vpv5 ckm1y83 csru8nn c1md20bl c1e892th c1qyy4dh ct02u4h c1nouzdk c1hz2opz c1c9nyn co9inq6 c18nx7en c13zjl4p c1cb3y4c c1h3d6dm c10psuuk cl60rel c1ib9cr2 cb06ied"
-                ><span class="w-text">Let’s get started</span>
+                ><span class="w-text">Let's get started</span>
                 <div class="w-html-embed csru8nn cblpe2z c1y0z7zr">
                   <svg
                     width="100%"
@@ -470,12 +470,12 @@
                       In my free time and my future plans
                     </h3>
                     <p class="w-paragraph">
-                      I’m really into AI. I love reading papers, articles, and
+                      I'm really into AI. I love reading papers, articles, and
                       trying out new models. But the more I learn, the clearer
                       it gets: if smart systems are running everything, someone
-                      has to keep them safe. That’s why, after my bachelor’s,
-                      I’m planning a master’s in cybersecurity. I want to be the
-                      person who makes sure tomorrow’s AI-powered apps stay
+                      has to keep them safe. That's why, after my bachelor's,
+                      I'm planning a master's in cybersecurity. I want to be the
+                      person who makes sure tomorrow's AI-powered apps stay
                       secure, honest, and helpful.
                     </p>
                   </div>
@@ -828,7 +828,7 @@
                 </p>
               </div>
               <div class="w-box">
-                <form class="w-webhook-form">
+                <form class="w-webhook-form" action="https://formspree.io/f/mrbqdejr" method="POST">
                   <div
                     class="w-box cry9bxc c1lfjoq7 c10zkoym ct8c5y2 c3fmn7t c9jnjeu c1357293"
                   >
@@ -1188,6 +1188,46 @@
     </script>
     <script id="vike_globalContext" type="application/json">
       {}
+    </script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const form = document.querySelector('.w-webhook-form');
+        
+        form.addEventListener('submit', async function(e) {
+          e.preventDefault();
+          
+          const submitButton = form.querySelector('button[type="submit"]');
+          const originalText = submitButton.innerHTML;
+          submitButton.innerHTML = 'Sending...';
+          submitButton.disabled = true;
+          
+          try {
+            const formData = new FormData(form);
+            const response = await fetch(form.action, {
+              method: 'POST',
+              body: formData,
+              headers: {
+                'Accept': 'application/json'
+              }
+            });
+            
+            if (response.ok) {
+              submitButton.innerHTML = 'Message Sent!';
+              form.reset();
+            } else {
+              throw new Error('Form submission failed');
+            }
+          } catch (error) {
+            submitButton.innerHTML = 'Error! Please try again.';
+            console.error('Error:', error);
+          }
+          
+          setTimeout(() => {
+            submitButton.innerHTML = originalText;
+            submitButton.disabled = false;
+          }, 3000);
+        });
+      });
     </script>
     <script
       src="/assets/entries/entry-server-routing.qFFLZIGw.js"
